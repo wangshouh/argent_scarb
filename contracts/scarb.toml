@@ -1,0 +1,15 @@
+[package]
+name = "argent_scarb" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+members = [
+    "src/account",
+    "src/lib",
+    "src/multicall",
+    "src/multisig"
+]
+
+[dependencies]
+starknet = ">=2.0.0"
+
+[[target.starknet-contract]]
+allowed-libfuncs = true

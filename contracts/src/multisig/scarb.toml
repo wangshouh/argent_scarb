@@ -1,0 +1,10 @@
+[package]
+name = "argent_multsig" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+
+[dependencies]
+starknet = ">=2.0.0"
+argent_lib = { path = "../lib" }
+
+[[target.starknet-contract]]
+allowed-libfuncs = true
